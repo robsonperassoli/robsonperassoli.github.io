@@ -10,10 +10,5 @@ Trabalho com PHP desde 2008, quando comecei a programar, desde lá trabalhei com
 
 Nestes anos tive a oportunidade de acompanhar o crescimento da WEB e a evolução das linguagens para suportar este emaranhado de coisas online que temos hoje em dia.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[robsonperassoli@gmail.com](mailto:robsonperassoli@gmail.com)
+### Fale comigo
+Você pode entrar em contato pelo e-mail [robsonperassoli@gmail.com](mailto:robsonperassoli@gmail.com) ou através das mídias sociais abaixo. :)
