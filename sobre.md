@@ -1,10 +1,14 @@
 ---
 layout: page
-title: About
+title: Sobre
 permalink: /sobre/
 ---
 
-Some information about you!
+Robson Gian Perassoli, bacharel em Sistemas de informação pela UNOESC, fascinado por desenvolvimento de software, principalmente para internet. 
+
+Trabalho com PHP desde 2008, quando comecei a programar, desde lá trabalhei com vários frameworks e linguagens passando por Flex e Actionscript até Java, além de me aventurar vez ou outra pelas bandas de ruby on Rails e Python, tive até alguma experiencia com Delphi nas épocas de faculdade.
+
+Nestes anos tive a oportunidade de acompanhar o crescimento da WEB e a evolução das linguagens para suportar este emaranhado de coisas online que temos hoje em dia.
 
 ### More Information
 
@@ -12,4 +16,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[robsonperassoli@gmail.com](mailto:robsonperassoli@gmail.com)
