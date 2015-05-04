@@ -24,7 +24,8 @@ Depois de copiar o metro podemos iniciar nosso web Service, que terá como funç
 
 Segue a implementação da classe Pessoa:
 
-<pre class="brush: java; title: ; notranslate" title="">public class Pessoa {
+```java
+public class Pessoa {
     
     private String nome;
     private String email;
@@ -32,11 +33,12 @@ Segue a implementação da classe Pessoa:
 
     //Getters e Setter omitidos
 }
-</pre>
+```
 
 A seguir crie a classe HelloService, que será a implementação do WebService:
 
-<pre class="brush: java; title: ; notranslate" title="">@WebService
+```java
+@WebService
 public class HelloService {
 
     @WebMethod(operationName="sayHello")
@@ -44,7 +46,7 @@ public class HelloService {
         return "Hello " + p.getNome();
     }
 }
-</pre>
+```
 
 Podemos notar a simplicidade em definir o WebService. Veja a anotação **@WebService** é ela que diz que esta classe é um WebService. Após a definição da classe podemos observar o método público criado, este método processará a chamada, recebendo um parâmetro com um objeto Pessoa. 
 
@@ -56,27 +58,29 @@ Após a criação das classes é necessário configurar o arquivo **web.xml**. V
 
 O arquivo sun-jaxws.xml ainda não existe, portanto crie-o dentro da pasta WEB-INF com o seguinte conteúdo:
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"&gt;
-  &lt;endpoint implementation="seupacote.HelloService" name="HelloService" url-pattern="/HelloService"/&gt;
-&lt;/endpoints&gt;
-</pre>
+```xml
+<?xml version="1.0" encoding="UTF-8">
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="seupacote.HelloService" name="HelloService" url-pattern="/HelloService"/>
+</endpoints>
+```
 
 Altere o arquivo web.xml adicionando o seguinte conteúdo:
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;listener&gt;
-    &lt;listener-class&gt;com.sun.xml.ws.transport.http.servlet.WSServletContextListener&lt;/listener-class&gt;
-&lt;/listener&gt;
-&lt;servlet&gt;
-    &lt;servlet-name&gt;HelloService&lt;/servlet-name&gt;
-    &lt;servlet-class&gt;com.sun.xml.ws.transport.http.servlet.WSServlet&lt;/servlet-class&gt;
-    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
-&lt;/servlet&gt;
-&lt;servlet-mapping&gt;
-    &lt;servlet-name&gt;HelloService&lt;/servlet-name&gt;
-    &lt;url-pattern&gt;/HelloService&lt;/url-pattern&gt;
-&lt;/servlet-mapping&gt;
-</pre>
+```xml
+<listener>
+    <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+</listener>
+<servlet>
+    <servlet-name>HelloService</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+    <servlet-name>HelloService</servlet-name>
+    <url-pattern>/HelloService</url-pattern>
+</servlet-mapping>
+```
 
 Após terminar estas configurações seu WebService esta pronto para ser executado. Você pode visualizar o WSDL gerado acessando http://seuhost:suaporta/SuaApp/HelloService?wsdl.
 

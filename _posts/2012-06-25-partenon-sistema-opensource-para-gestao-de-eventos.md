@@ -15,10 +15,11 @@ Enfim, este post é mais para documentar que o Partenon é um projeto *OpenSourc
 
 Os códigos fonte foram disponibilizados no Github, caso você saiba usar o GIT baixe o projeto pelo endereço <https://github.com/robsonperassoli/partenon>, caso contrário assista o tutorial abaixo, nele ensino como instalar o GIT e obter o projeto do Github.
 
+<iframe width="854" height="510" src="https://www.youtube.com/embed/heiIeRlCe5I" frameborder="0" allowfullscreen></iframe>
 
 
 Segue um vídeo demonstrando algumas funcionalidades do Partenon.
 
-
+<iframe width="854" height="510" src="https://www.youtube.com/embed/6wLudvfiCTo" frameborder="0" allowfullscreen></iframe>
 
 Um abraço e até a próxima.

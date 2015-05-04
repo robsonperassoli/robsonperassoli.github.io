@@ -37,10 +37,11 @@ Primeiramente devemos escolher a configuração do Maven Profile do projeto, no 
 
 Após isso habilitaremos o listener do Weld (framework para CDI) no arquivo web.xml, devendo ser adicionado o seguinte conteúdo:
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;listener&gt;
-    &lt;listener-class&gt;org.jboss.weld.environment.servlet.Listener&lt;/listener-class&gt;
-&lt;/listener&gt;
-</pre>
+```xml
+<listener>
+    <listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
+</listener>
+```
 
 Provavelmente este trecho apenas estará comentado, bastando apenas remover os comentários.
 
@@ -48,29 +49,31 @@ O próximo arquivo a ser alterado é o persistence.xml, que está localizado na 
 
 O arquivo deve ficar com o seguinte conteúdo:
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;persistence-unit name="bookmark-ds" transaction-type="RESOURCE_LOCAL"&gt;
+```xml
+<persistence-unit name="bookmark-ds" transaction-type="RESOURCE_LOCAL">
 
-    &lt;class&gt;com.mycompany.teste.domain.Bookmark&lt;/class&gt;
+    <class>com.mycompany.teste.domain.Bookmark</class>
 
-    &lt;properties&gt;
-        &lt;property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" /&gt;
-        &lt;property name="javax.persistence.jdbc.user" value="sa" /&gt;
-        &lt;property name="javax.persistence.jdbc.password" value="" /&gt;
-        &lt;property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:hsql:." /&gt;
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
+        <property name="javax.persistence.jdbc.user" value="sa" />
+        <property name="javax.persistence.jdbc.password" value="" />
+        <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:hsql:." />
 
-        &lt;property name="eclipselink.logging.level" value="FINE" /&gt;
-        &lt;property name="eclipselink.ddl-generation" value="create-tables" /&gt;
-        &lt;property name="eclipselink.ddl-generation.output-mode" value="database" /&gt;
-    &lt;/properties&gt;
-&lt;/persistence-unit&gt;
-</pre>
+        <property name="eclipselink.logging.level" value="FINE" />
+        <property name="eclipselink.ddl-generation" value="create-tables" />
+        <property name="eclipselink.ddl-generation.output-mode" value="database" />
+    </properties>
+</persistence-unit>
+```
 
 Na mesma pasta devemos alterar o arquivo beans.xml, para ativar a estratégia de transação JPA do Demoiselle. Deixe apenas uma linha contendo a seguinte entrada:
 
-<pre class="brush: xml; title: ; notranslate" title="">&lt;alternatives&gt;
-    &lt;class&gt;br.gov.frameworkdemoiselle.transaction.JPATransaction&lt;/class&gt;
-&lt;/alternatives&gt;
-</pre>
+```xml
+<alternatives>
+    <class>br.gov.frameworkdemoiselle.transaction.JPATransaction</class>
+</alternatives>
+```
 
 Após estas configurações o projeto estará apto a rodar, o arquétipo vem configurado com uma base de dados padrão que é iniciada com o projeto.  O banco de dados utilizado é o <a title="Hyper SQL Homepage" href="http://hsqldb.org/" target="_blank">HSQLDB</a>.
 
