@@ -4,13 +4,17 @@ title: Sobre
 permalink: /sobre/
 ---
 
-Meu nome é Robson Gian Perassoli sou bacharel em Sistemas de informação pela UNOESC, fascinado por desenvolvimento de software, principalmente para internet. 
+Meu nome é Robson Gian Perassoli eu sou graduado em Sistemas de Informação pela UNOESC e fascinado por desenvolvimento de software e tecnologia.
 
-Trabalho com PHP desde 2008, quando comecei a programar, desde lá trabalhei com vários frameworks e linguagens passando por Flex e Actionscript até Java, além de me aventurar vez ou outra pelas bandas de Ruby on Rails e Python, já desenvolvi aplicativos móveis nativamente para android e com phonegap para IOS. Também tive experiências com Delphi na época da faculdade. 
+Trabalho com PHP desde 2008, quando comecei a programar, desde então, tive a oportunidade de trabalhar com várias linguagens de programação e frameworks como Flex/Actionscript, Java, Delphi e as vezes Ruby/Rails e python.
 
-Atualmente estou focando meus estudos para a integração de sistemas e aplicações de larga escala.
+Tive algumas experiências desenvolvendo para plataformas móveis, nativamente para Android e com Phonegap e Cordova para IOS.
 
-Enfim, sempre que possível estou buscando coisas novas...
+Venho usando NoSQL com MongoDB e estou estudando algoritmos de machine learning e sistemas de busca como Elasticsearch.
+
+Eu gosto muito de tecnologias inovadoras e sempre que posso tento algo novo.
+
+Sou apaixonado por sistemas em larga escala, e resolução de grandes problemas com software e estou focando meus estudos nesta área.
 
 ### Fale comigo
 Você pode entrar em contato pelo e-mail [robsonperassoli@gmail.com](mailto:robsonperassoli@gmail.com) ou através das mídias sociais abaixo. :)
