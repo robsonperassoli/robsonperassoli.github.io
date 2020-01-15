@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "http://robsonperassoli.com.br/resume/precache-manifest.6520e684e94b04bf66cb1968fdfba8b2.js"
+  "http://robsonperassoli.com.br/resume/precache-manifest.e1d2d2350f7768214be3f8e143fac48b.js"
 );
 
 self.addEventListener('message', (event) => {
