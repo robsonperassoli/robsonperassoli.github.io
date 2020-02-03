@@ -9,8 +9,9 @@ function WorkExperience() {
         position='Software Engineer'
         company='HelloMD'
         description={[
-          'At hellomd i worked most of the time as a frontend engineer using react, redux and styled components.',
-          'In this time i was able to work a long time refactoring the checkout and online consultation processes improving the code architecture and modularity using react hooks with new react best practices.'
+          'At helloMD I worked most of the time as a frontend engineer using react, redux and styled-components.',
+          'In this time I was able to work a long time refactoring the checkout and online consultation processes improving the code architecture and modularity using react hooks with modern react best practices.',
+          'Worked part of the time as a back-end engineer on a nodejs based microservices architecture.'
         ]}
         location='Remote'
         startDate='November 2018'
@@ -20,7 +21,7 @@ function WorkExperience() {
         position='Lead Developer'
         company={`DB'links Sistemas`}
         description={[
-          'Worked on a multi-tenant e-commerce app using react on the front-end and nodeJS with GraphQL on the backend.',
+          'Worked on a multi-tenant e-commerce app using React on the front-end and nodeJS with GraphQL on the backend.',
           'Navigated on several areas, from AWS servers configuration, deployment, front-end and back-end architecture and engineering.'
         ]}
         location='Remote'
