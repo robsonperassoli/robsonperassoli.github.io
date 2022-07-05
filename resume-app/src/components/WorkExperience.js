@@ -7,6 +7,17 @@ function WorkExperience() {
     <Section title='Professional Experience'>
       <Job
         position='Software Engineer'
+        company='Legends of Learning'
+        description={[
+          'At Legends I work most of time close to the product team, building the classroom app and the student gameplayer.',
+          'As a fullstack engineer I work with Elixir, Phoenix, ReactJS, NextJS, and Tailwind CSS.'
+        ]}
+        location='Remote'
+        startDate='March 2020'
+        endDate='Today'
+      />
+      <Job
+        position='Software Engineer'
         company='HelloMD'
         description={[
           'At helloMD I worked most of the time as a frontend engineer using react, redux and styled-components.',
